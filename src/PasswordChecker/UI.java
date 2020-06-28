@@ -44,7 +44,7 @@ public class UI {
 			
 		frame = new JFrame("Password Checker");
 		JButton submit = new JButton();
-		text = new JTextArea("", 10, 20);
+		text = new JTextArea("", 10, 40);
 		JPanel pwPanel = new JPanel();
 		JScrollPane scrollPane = new JScrollPane(text);
 		passwordField = new JPasswordField();
@@ -52,7 +52,7 @@ public class UI {
 		
 		scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 		submit.setText("Check Password");
-		frame.setBounds(100,50,300,300);
+		frame.setBounds(100,50,480,300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		text.setEditable(true);
 			
@@ -139,12 +139,11 @@ public class UI {
 			if(first.equals(match)) {
 				numAppearances = Integer.parseInt(num);
 			}
-			
 		}
 		
 		
 		in.close();
-
+		
 		
 		return numAppearances;
 	}
